@@ -1,4 +1,3 @@
-import { async } from "q"
 import { json,seeListTodo,addId,addTitle,addCreatedAt,addUpdatedAt,createTodo,changeTodo,deleteTodo } from "./apis.js"
 
 // 1. 목록조회가 가장 먼저 뜨게 함 
