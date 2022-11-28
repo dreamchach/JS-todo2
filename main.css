@@ -1,0 +1,95 @@
+header{
+    display: flex;
+    background-color: skyblue;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    color: blue;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    left: 30px;
+    border: 5px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 50px;
+}
+.inner{
+    position: relative;
+    width: 80%;
+    height: max-content;
+}
+.inner input.text{
+    height: 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    width: 400px;
+}
+.inner button.add{
+    background-color: white;
+    border: 0;
+    font-weight: 700;
+    color: blue;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px rgba(255,255,255,0.7);
+}
+.inner button.add:hover{
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 3px 3px 4px rgba(255,255,255,0.5);
+}
+main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+main .item{
+    display: flex;
+    padding: 30px 10px;
+    background-color: skyblue;
+    border: 3px solid blue;
+    margin: 10px auto;
+    width: 100%;
+    border-radius: 20px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+main .item.checked{
+    background-color: rgba(255,150,150);
+    border: 3px solid red;
+}
+main .item .name{
+    width: 500px;
+    margin: 5px;
+}
+main .item.checked .name{
+    text-decoration: line-through;
+}
+.createlist, .updatelist{
+    width: max-content;
+    display: block;
+}
+.create, .update{
+    margin: 0 5px;
+}
+button.delete{
+    background-image: url(./61155.png);
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 3px solid blue;
+    border-radius: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+main .item.checked button.delete{
+    border: 3px solid red;
+}
